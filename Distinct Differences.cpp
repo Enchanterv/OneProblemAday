@@ -1,15 +1,16 @@
-Q. Given an array of size N find the difference between all distinct pairs and push them into the array if not present.
+/* Q. Given an array of size N find the difference between all distinct pairs and push them into the array if not present.
    After this is performed,output the Kth largest number in the array.
 
-E. 6                //Size of input array(N)                                                                                                                       
-   2                //(K)                                                                                                                       
-   1 3 7 9 21 47    // Input Array                                                                                                           
+   E. 6                //Size of input array(N)                                                                                                                       
+      2                //(K)                                                                                                                       
+      1 3 7 9 21 47    // Input Array                                                                                                           
  
- Output - 
- 1 2 3 4 6 7 8 9 12 14 18 20 21 26 38 40 44 46 47                                                                            
- 2th Largest : 46              
+   Output - 
+   1 2 3 4 6 7 8 9 12 14 18 20 21 26 38 40 44 46 47                                                                            
+   2th Largest : 46              
  
- ----------------------------------------------------------------------------------------------------------------------------------------
+   ----------------------------------------------------------------------------------------------------------------------------------------
+*/
 
 #include <iostream>
 #include <vector>
