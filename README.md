@@ -1,2 +1,2 @@
 # OneProblemAday
-Daily added questions with answer
+Daily added questions with answers solved in C++
