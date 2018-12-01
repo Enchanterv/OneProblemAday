@@ -1,12 +1,10 @@
 #include <iostream>
 #include <algorithm> 
 #include <vector>
-#include <cstring>
 
 int knapSack(int W,std::vector<int>wt,std::vector<int>val,int n )
 {   
-    int KS[W+1][n+1];
-    memset(KS,-1,sizeof(KS));
+    std::vector < std::vector<int> > KS ( W+1 , std::vector<int> (n+1,-1) ); 
     
     if( W==0 || n==0 )
     return 0;
