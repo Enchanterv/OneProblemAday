@@ -1,25 +1,24 @@
 #include <iostream>
-#include <string>
-
-using namespace std;
+#include <vector>
+#include <algorithm>
 
 int main()
 {
-int ar[]={1,2,3,4,5,1,2,3,1,1,8};
-int max=0;
+std::vector<int> vec={1,2,3,4,5,1,2,3,1,1,8};
+std::vector<int>::iterator it;
+int max = *std::max_element(vec.begin(),vec.end());
 
-for(int i=0;i<11;i++)
-    if( max < ar[i] )
-        max = ar[i];
+std::vector<int> c(max+1,0);
 
-int c[max+1]={0};
+std::cout<<std::endl;
 
-for(int i=0;i<11;i++)
-c[ar[i]]++;
+for(it=vec.begin();it!=vec.end();it++)
+c.at(*it)++;
 
-cout<<" Sorted Array : ";
+std::cout<<" Sorted Array : ";
+
 for(int i=0;i<=max;i++)
-    for(int j=1;j<=c[i];j++)
-        cout<<i<<" ";
+    for(int j=1;j<=c.at(i);j++)
+        std::cout<<i<<" ";
 
 }
